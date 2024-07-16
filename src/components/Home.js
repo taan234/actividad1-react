@@ -1,30 +1,22 @@
 // src/components/Home.js
 import React from 'react';
-import './Home.css'; // Importamos el nuevo archivo CSS
+import './Home.module.css'; // Importamos el archivo de estilos CSS
 
 function Home() {
   return (
     <div className="home-container">
-      <div className="hero">
-        <h1 className="hero-title">Explora la moda que amas</h1>
-        <p className="hero-subtitle">Descubre las últimas tendencias en ropa y accesorios</p>
-        <button className="hero-button">Ver colección</button>
+      <div className="hero-section">
+        <h1 className="hero-title">Bienvenida a nuestra tienda de moda</h1>
+        <p className="hero-description">
+          Descubre las últimas tendencias y encuentra tu estilo perfecto.
+        </p>
+        <button className="hero-button">Explorar colección</button>
       </div>
       <div className="featured-section">
-        <div className="featured-card">
-          <img className="featured-image" src="https://via.placeholder.com/400x300" alt="Featured Product" />
+        <div className="featured-item">
+        <h2 className="featured-title">Primavera - Verano 2024</h2>
+          <img src="https://cdn0.matrimonio.com.pe/article/8766/3_2/1280/png/46678-c7699-por.jpeg" alt="Imagen 1" className="featured-image" />
           <div className="featured-info">
-            <h3 className="featured-title">Vestido primaveral</h3>
-            <p className="featured-text">Perfecto para cualquier ocasión</p>
-            <button className="featured-button">Comprar ahora</button>
-          </div>
-        </div>
-        <div className="featured-card">
-          <img className="featured-image" src="https://via.placeholder.com/400x300" alt="Featured Product" />
-          <div className="featured-info">
-            <h3 className="featured-title">Zapatos elegantes</h3>
-            <p className="featured-text">Confort y estilo combinados</p>
-            <button className="featured-button">Ver detalles</button>
           </div>
         </div>
       </div>
@@ -33,3 +25,5 @@ function Home() {
 }
 
 export default Home;
+
+
