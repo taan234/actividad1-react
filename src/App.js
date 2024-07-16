@@ -36,7 +36,7 @@ const App = () => {
     } else {
       const filtered = products.filter((product) =>
         product.name.toLowerCase().includes(query.toLowerCase()) ||
-        product.brand.toLowerCase().includes(query.toLowerCase()) ||
+        product.Talla.toLowerCase().includes(query.toLowerCase()) ||
         product.model.toLowerCase().includes(query.toLowerCase())
       );
       setFilteredProducts(filtered);
