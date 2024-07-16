@@ -29,10 +29,10 @@ const ReturnOrder = () => {
 
   return (
     <div className={styles.returnOrder}>
-      <h2 className={styles.title}>Devolver Pedido</h2>
+      <h2 className={styles.title}>Devolución</h2>
       <form onSubmit={handleReturnSubmit} className={styles.form}>
         <div className={styles.formGroup}>
-          <label htmlFor="orderId" className={styles.label}>ID del Pedido:</label>
+          <label htmlFor="orderId" className={styles.label}>ID de Orden:</label>
           <input
             type="text"
             id="orderId"
@@ -40,9 +40,10 @@ const ReturnOrder = () => {
             onChange={(e) => setOrderId(e.target.value)}
             required
             className={styles.input}
+            placeholder="Número de orden"
           />
         </div>
-        <button type="submit" className={styles.submitButton}>Devolver Pedido</button>
+        <button type="submit" className={styles.submitButton}>Devolución de Prendas</button>
       </form>
       {message && <p className={styles.message}>{message}</p>}
     </div>
