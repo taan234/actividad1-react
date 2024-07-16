@@ -1,0 +1,58 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+  background-color: #f8f9fa; /* Fondo claro para elegancia */
+  color: #333; /* Texto oscuro para contraste */
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la página */
+}
+
+.main {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+  padding: 20px;
+}
+
+.header {
+  background-color: #fff; /* Fondo blanco para el header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre logo y navegación */
+}
+
+.headerLogo {
+  height: 50px; /* Altura del logo */
+  margin-right: 20px; /* Espacio entre logo y título */
+}
+
+.headerTitle {
+  font-size: 24px; /* Tamaño de fuente para el título */
+  color: #e91e63; /* Color llamativo para el título */
+}
+
+.nav {
+  display: flex; /* Flexbox para el menú de navegación */
+}
+
+.navLink {
+  margin: 0 15px; /* Espaciado entre enlaces */
+  text-decoration: none; /* Sin subrayado */
+  color: #333; /* Color de los enlaces */
+}
+
+.navLink:hover {
+  color: #e91e63; /* Cambio de color al pasar el mouse */
+}
+
+.footer {
+  background-color: #fff; /* Fondo blanco */
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+}

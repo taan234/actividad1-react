@@ -1,0 +1,48 @@
+/* src/components/Header.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Didot&display=swap');
+
+.header {
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerTitle {
+  font-size: 35px; /* Aumenta el tamaño para destacar */
+    font-weight: 400; /* Más grueso */
+    color: #c94281; /* Un color púrpura elegante */
+    font-family: 'Playfair Display', serif; /* Fuente más sofisticada */
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.8); /* Sombra sutil */
+}
+
+.headerLogo {
+  width: 100px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #e74c3c; /* Color cálido y llamativo */
+  font-weight: 200;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #c0392b; /* Color más oscuro al pasar el mouse */
+  text-decoration: underline;
+}
+
+.cartCount {
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 3px;
+  font-size: 8px;
+}
